@@ -1,0 +1,32 @@
+@import '../utils/variables';
+
+.gallery {
+    padding: 70px;
+}
+
+.gallery__title {
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Roboto';
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    font-size: 36px;
+    padding: 15px;
+}
+
+.gallery__text {
+    background: rgba(47, 48, 58, 0.8);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    width: 372px;
+    color: $white;
+    padding: 25px 0px;
+    position: absolute;
+    top: 1497px;
+}

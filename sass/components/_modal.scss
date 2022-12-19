@@ -1,0 +1,142 @@
+@import '../utils/variables';
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 400px;
+    top: 100px;
+    bottom: 100px;
+
+    background: $white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal__btn {
+    box-sizing: border-box;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 8px 8px 8px 460px;
+    width: 30px;
+    height: 30px;
+    left: 1026px;
+    top: 229px;
+    
+
+    background: $white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal__btn:hover {
+    background: $white;
+    color: $blue;
+}
+
+.modal__title {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 12px 40px;
+    position: relative;
+}
+
+.modal__item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4px;
+    color: $gray;
+}
+
+.modal__form-items {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 420px;
+    height: 38px;
+    margin-top: 2px;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.modal__form-items:focus, 
+.modal__form-items:hover {
+    border: 1px solid $blue;
+}
+
+.modal__form-item {
+    resize: none;
+    width: 420px;
+    height: 90px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.modal__form-item:hover {
+    border: 1px solid $blue;
+}
+
+.modal__checked {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 2px;
+    padding: 2px;
+ }
+
+ .modal__chekd-term {
+    margin: 5px;
+}
+
+.modal__btn-en {
+    @include buttonBlue($blue, $white);
+    width: 200px;
+    height: 45px;
+    margin: 4px 110px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal__btn-en:hover {
+    background: $blueF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal__items-group {
+    position: relative;
+}
+
+.modal__icon {
+    position: absolute;
+    margin: 11px;
+    fill: $black;
+}
+
+.modal__icon:focus, .modal__icon:hover  {
+    fill: $blue;
+}

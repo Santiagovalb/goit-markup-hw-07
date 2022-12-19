@@ -1,0 +1,52 @@
+@import '../utils/variables';
+
+.navegation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1349px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    border-bottom: 1px solid $white;
+}
+
+.navegation__beginning {
+    @include logo($blue);
+    padding: 100px;
+}
+
+.navegation__link{
+    color: $black;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 10px;
+}
+
+.navegation__link:hover {
+    color: $blue;
+}
+
+.contacts {
+    color: $gray; 
+    padding: 10px 80px 0 0;
+}
+
+.contacts__info {
+    color: $gray;
+    padding: 10px 80px 0 0;
+}
+
+.contacts__info:hover {
+    color: $blue;
+}
+
+.contacts__icon {
+    fill: $gray;
+}
+
+.contacts__icon:hover {
+    fill: $blue;
+}
+
+

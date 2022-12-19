@@ -1,0 +1,35 @@
+@import '../sass/utils/variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 10px;
+    letter-spacing: 0.03em;
+    display: inline-block;
+}
+
+@import 'components/header';
+@import 'components/panel';
+@import 'components/buttonsGrid';
+@import 'components/softKills';
+@import 'components/hardSkills';
+@import 'components/workTeam';
+@import 'components/customers';
+@import 'components/footer';
+@import 'components/grid';
+@import 'components/modal';
+
+
+
+
+
+

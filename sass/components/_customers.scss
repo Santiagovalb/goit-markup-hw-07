@@ -1,0 +1,37 @@
+@import '../utils/variables';
+
+.customers {
+    padding: 25px;
+}
+
+.customers__title {
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Roboto';
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    font-size: 36px;
+    padding: 15px;
+}
+
+.customers__regular {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 100px;
+}
+
+.customers__icon {
+    background-color: $white;
+    width: 170px;
+    height: 81px;
+    border-radius: 5px;
+    padding: 10px;
+    fill: $grayI;
+    border: $grayI solid 1px;
+}
+
+.customers__icon:hover {
+    fill: $blue;
+    cursor: pointer;
+    border: $blue solid 1px;
+}

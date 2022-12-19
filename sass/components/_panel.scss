@@ -1,0 +1,37 @@
+@import '../utils/variables';
+
+.panel {
+    display: flex;
+    padding: 230px;
+    right: 452px;
+    background: linear-gradient(310deg, #0000005d, #2f303a94), url("./images/portal.jpg");
+}
+
+.panel__title {
+    color: $white;
+    font-weight: 900;
+    font-size: 44px;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 696px;
+    margin: 0 auto;
+}
+
+.panel__button  {
+    @include buttonBlue($blue, $white);
+    position:absolute;
+    width: 261px;
+    height: 50px;
+    left: 545px;
+    top: 460px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.panel__button:hover {
+    background: $blueF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
