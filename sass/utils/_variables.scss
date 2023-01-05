@@ -1,40 +1,19 @@
-$black: #212121;
-$white: #ffffff;
-$blue:  #2196F3;
-$blueF: #188CE8;
-$grayI: #AFB1B8;
-$gray:  #757575;
-$grayS: #F5F4FA;
-$baner: #2F303A;
+$colors: (
+    brand: rgba(33, 150, 243, 1),
+    background: rgb(47, 48, 58),
+    background2: rgba(245, 244, 250, 1),
+    links: rgb(117,117,117),
+    links2: rgba(255, 255, 255, 0.6),
+    logos: rgb(175,177,184),
+    titles: rgba(33, 33, 33, 1),
+    titles2: rgba(255, 255, 255, 1),
+    form-border: rgba(33, 33, 33, 0.2)
+);
 
-@mixin buttonBlue($bColor, $color){
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background: $bColor;
-    border-radius: 4px;
-    color: $color;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
-}
+$primary-font: "Roboto", sans-serif;
+$secondary-font: "Raleway", sans-serif;
+$borders: 4px;
 
-@mixin logo($color) {
-    font-family: 'Raleway' !important;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    color: $blue;
-}
-
-@mixin iconsWeb($color) {
-    display: flex;
-    fill: $color;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    padding: 10px;
-    cursor: pointer;
-}
+@function getColor($key) {
+    @return map-get($colors, $key);
+  }
